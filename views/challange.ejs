@@ -1,0 +1,166 @@
+<%- include('partials/header') %>
+
+
+
+    <%- include('partials/navbar') %>
+
+
+
+        <!-- mulai dari sini guys -->
+        <div class="container-challange">
+            <h1 class="title-category">Hello World</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='Hello World' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">Web</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='Web' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">Forensic</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='Forensic' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">Pwn</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='PWN' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">Reverse</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='Reverse' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">Cryptography</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='Cryptography' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+            <h1 class="title-category">General Skill</h1>
+            <div class="row">
+                <% for(data of result2) { %>
+                    <% if (data.kategori=='General Skill' ) { %>
+                        <a href="/challange/tag/<%= data.id %>">
+                            <% if (data.status=='true' ) { %>
+                                <div class="card-soal card-soal-hijau">
+                                    <% } else { %>
+                                        <div class="card-soal card-soal-biru">
+                                            <% } %>
+                                                <p>
+                                                    <%= data.title %>
+                                                </p>
+                                                <p>⭐️ <%= data.skor %>
+                                                </p>
+                                        </div>
+                        </a>
+                        <% } %>
+
+                            <% } %>
+            </div>
+
+        </div>
+        <%- include('partials/footer') %>

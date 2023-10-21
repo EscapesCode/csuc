@@ -1,0 +1,62 @@
+<%- include('partials/headerAdmin.ejs') %>
+
+    <div class="container mt-5">
+        <h1 class="h1">Tambah Data Challange</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/admin/tambah" method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="title" class="form-control" id="title" placeholder="title challange">
+                        <label for="title">Title Challange</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" name="skor" class="form-control" id="skor" placeholder="skor challange">
+                        <label for="skor">Skor</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="description" class="form-control" id="description"
+                            placeholder="description">
+                        <label for="description">description</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="link" class="form-control" id="link" placeholder="link challange">
+                        <label for="link">Link</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="format" class="form-control" id="format"
+                            placeholder="format challange">
+                        <label for="format">format Challange</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <!-- <input type="text" name="kategori" class="form-control" id="kategori"
+                            placeholder="kategori challange">
+                        <label for="kategori">kategori Challange</label> -->
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" name="kategori"
+                                aria-label="Kategori Challange">
+                                <option selected>Pilih Kategori Challange</option>
+                                <option value="Hello World">Hello World</option>
+                                <option value="Web">Web</option>
+                                <option value="Forensic">Forensic</option>
+                                <option value="PWN">PWN</option>
+                                <option value="Reverse">Reverse</option>
+                                <option value="Cryptography">Cryptography</option>
+                                <option value="General Skill">General Skill</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="jawaban" class="form-control" id="jawaban" placeholder="jawaban">
+                        <label for="jawaban">jawaban</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <button type="submit" class="btn btn-primary">Tambah Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <%- include('partials/footerAdmin.ejs') %>

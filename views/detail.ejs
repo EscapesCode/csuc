@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="head">
+                    <h3>
+                        <%= result[0].kategori %>
+                    </h3>
+                    <a href="/challange">
+                        <span class="close">&times;</span>
+                    </a>
+                </div>
+                <div class="title">
+                    <h1 id="judul">
+                        <%= result[0].title %>
+                    </h1>
+                    <p>⭐️ <%= result[0].skor %>
+                    </p>
+                </div>
+                <div class="question">
+                    <p>
+                        <%= result[0].description %>
+                    </p>
+                    <p class="border-kiri">195.294.204.</p>
+                    <p>Attacment</p>
+                    <a href="<%= result[0].link %>" class="border-kiri">link</a>
+                    <p>Flag format: <%= result[0].format %>
+                    </p>
+                </div>
+                <form action="/challange/answer/<%= result[0].id %>" class="modal-form" method="post">
+                    <input type="text" placeholder="Flag" name="jawabanUser">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>

@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+    <%- include('partials/navbar') %>
+
+        <div class="container-ach">
+            <h1 class="title-acv">Achievements</h1>
+            <div class="box-ach">
+                <% for(data of result) { %>
+                    <div class="card">
+                        <div class="gambar">🏆</div>
+                        <div class="body">
+                            <table>
+                                <tr>
+                                    <td>Rank Place</td>
+                                    <td>:</td>
+                                    <td>
+                                        <%= data.rank %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Competition</td>
+                                    <td>:</td>
+                                    <td>
+                                        <%= data.competition %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>:</td>
+                                    <td>
+                                        <%= data.date %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+
+
+        <%- include('partials/footer') %>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prata&display=swap');
+
+.container-ach {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.title-acv {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box-ach {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    width: max-content;
+    background-color: #292954;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #3c3c74;
+}
+
+.gambar {
+    font-size: 50px;
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,66 @@
+<%- include('partials/headerAdmin.ejs') %>
+    <div class="container mt-5">
+        <!-- informasi jumlah users dan challange -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-bg-dark mb-3">
+                    <div class="card-header">jumlah users</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <p class="card-text">
+                            <%= result2[0].total %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-primary mb-3">
+                    <div class="card-header">Jumlah Challange</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Challange</h5>
+                        <p class="card-text">
+                            <%= result3[0].total %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dashboard point -->
+        <div class="row mt-5">
+            <div class="col">
+                <h1>🏆 Point Rank</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">No.</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Skor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let i=1 %>
+                            <% for(data of result) { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= i %>
+                                    </th>
+                                    <td>
+                                        <%= data.username %>
+                                    </td>
+                                    <td>
+                                        <%= data.skor %>
+                                    </td>
+                                    <% i+=1 %>
+                                </tr>
+                                <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footerAdmin.ejs') %>

@@ -1,0 +1,51 @@
+.container-challange {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.card-soal {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #3c3c74;
+}
+
+.card-soal-biru {
+    background-color: #292954;
+}
+
+.card-soal-hijau {
+    background-color: #58ba77;
+}
+
+.card-soal:hover {
+    cursor: pointer;
+    box-shadow:
+        inset 0 -3em 3em rgba(255, 255, 255, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+}
+
+.title-category {
+    margin-top: 50px;
+}
+
+.modalBtn {
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+}

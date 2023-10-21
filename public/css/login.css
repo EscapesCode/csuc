@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1A1A2E;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: #242444;
+    width: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .gambar {
+    height: 25vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: url("/img/loginImage.jpg");
+    background-size: cover;
+    background-position-y: -40px;
+    opacity: 0.5;
+}
+
+.card .gambar .content h3 {
+    color: #0f0f23;
+    font-size: 25px;
+}
+
+form {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item input {
+    height: 55px;
+    background-color: #1a1a32;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
+}
+
+.form-item label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form button {
+    height: 50px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo {
+    padding: 5px;
+    background-color: #242444;
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 260px;
+    left: 47vw;
+}

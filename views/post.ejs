@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+
+        <div class="container-post">
+            <% for(data of result) { %>
+                <div class="post">
+                    <h1 class="title">
+                        <%= data.judul %>
+                    </h1>
+                    <p class="body">
+                        <%= data.body %>
+                    </p>
+                </div>
+                <hr>
+                <% } %>
+        </div>
+
+        <%- include('partials/footer') %>

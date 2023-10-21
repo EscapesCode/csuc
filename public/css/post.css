@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prata&display=swap');
+
+.container-post {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: hotpink;
+}
+
+.body {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+hr {
+    margin-bottom: 40px;
+    border: none;
+    background-color: rgb(76, 76, 76);
+    height: 1px;
+}

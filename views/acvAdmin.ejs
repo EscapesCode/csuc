@@ -1,0 +1,53 @@
+<%- include('partials/headerAdmin') %>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Daftar Achievements</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">No.</th>
+                            <th scope="col">Rank Place</th>
+                            <th scope="col">Competition</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let i=1 %>
+                            <% for(data of result) { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= i %>
+                                    </th>
+                                    <td>
+                                        <%= data.rank %>
+                                    </td>
+                                    <td>
+                                        <%= data.competition %>
+                                    </td>
+                                    <td>
+                                        <%= data.date %>
+                                    </td>
+                                    <td>
+                                        <a href="/admin/acv/hapus/<%= data.id %>" class="btn btn-danger">Hapus</a>
+                                    </td>
+                                    <% i+=1 %>
+                                </tr>
+                                <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <%- include('partials/footerAdmin') %>

@@ -1,0 +1,25 @@
+<nav>
+    <div class="container-nav">
+        <div class="brand">
+            <a href="/">
+                <img src="/img/logo.png" alt="" width="70" height="70">
+            </a>
+        </div>
+        <div class="nav-link">
+            <a href="/post">Post</a>
+            <a href="/challange">Challange</a>
+            <a href="/achievment">Achievements</a>
+            <a href="/about">About Us</a>
+        </div>
+        <div class="nav-button">
+            <% if (name) { %>
+                <h1>
+                    Hi, <%= name %>
+                        <a href="/login/logout" style="margin-left: 30px;">Logout</a>
+                </h1>
+                <% } else { %>
+                    <a href="/login">Login</a>
+                    <% } %>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Inconsolata', monospace;
+    color: white;
+
+}
+
+body {
+    background-color: #1A1A2E;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-bottom: 0.2px solid #ccc;
+    border-color: #ae3ca0;
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+nav .nav-link {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: #ff6558;
+    font-size: 22px;
+    border: 0.3px solid #ff6558;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.nav-button a:hover {
+    background-color: #ff6558;
+    color: white;
+    border-color: #ff6558;
+    box-shadow: 0 4px 8px 0 rgba(255, 101, 88, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.nav-link a:hover {
+    color: #ae3ca0;
+}
