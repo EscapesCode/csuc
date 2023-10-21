@@ -1,0 +1,14 @@
+.text-table {
+    font-size : 25px
+
+}
+
+.text-table-header{
+    
+    font-size : 20px ;
+}
+.name{
+    font-size : 24px ;
+    font-weight  : bold;
+    padding-top : 15px ;
+}

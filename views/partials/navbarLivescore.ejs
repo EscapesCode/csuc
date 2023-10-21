@@ -14,10 +14,11 @@
         </div>
         <div class="nav-button">
             <% if (name) { %>
-                <h1>
-                    Hi, <%= name %>
+                <p class="name">
+                     Hi, <%= name %>
                         <a href="/login/logout" style="margin-left: 30px;">Logout</a>
-                </h1>
+                </p>
+              
                 <% } else { %>
                     <a href="/login">Login</a>
                     <% } %>
