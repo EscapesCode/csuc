@@ -38,10 +38,10 @@ const renderPageTambah = (req, res) => {
 }
 
 const tambahData = (req, res) => {
-    const { title, skor, description, link, format, kategori, jawaban } = req.body
-    const sql = `INSERT INTO challange (title, skor, description, link, format, kategori, jawaban) VALUES (?, ?, ?, ?, ?, ?, ?)`
+    const { title, skor, description, link, ipnc, format, kategori, jawaban } = req.body
+    const sql = `INSERT INTO challange (title, skor, description, link, ipnc, format, kategori, jawaban) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
 
-    pool.query(sql, [title, skor, description, link, format, kategori, jawaban], (err, result) => {
+    pool.query(sql, [title, skor, description, link, ipnc, format, kategori, jawaban], (err, result) => {
         if (err) throw err
         res.render('tambah')
     })
